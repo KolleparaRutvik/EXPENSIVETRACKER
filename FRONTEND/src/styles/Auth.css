@@ -1,0 +1,78 @@
+.auth-container {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  padding: clamp(1rem, 5vw, 2rem);
+  background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+}
+
+.auth-box {
+  width: min(400px, 100%);
+  padding: clamp(1.5rem, 5vw, 2.5rem);
+  background: white;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+}
+
+.auth-box h2 {
+  font-size: clamp(1.5rem, 5vw, 2rem);
+  margin-bottom: 1.5rem;
+}
+
+.auth-box form {
+  display: grid;
+  gap: 1rem;
+}
+
+.auth-box input {
+  width: 100%;
+  padding: clamp(0.5rem, 2vw, 0.75rem);
+  border: 1px solid #ddd;
+  border-radius: calc(var(--border-radius) / 2);
+  font-size: 1rem;
+}
+
+.auth-box button {
+  width: 100%;
+  padding: clamp(0.75rem, 2vw, 1rem);
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: calc(var(--border-radius) / 2);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.auth-box button:hover {
+  background: #1e3c72;
+}
+
+.auth-box p {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.auth-box a {
+  color: #2a5298;
+  text-decoration: none;
+}
+
+.auth-box a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+  .auth-box {
+    padding: 1.5rem;
+  }
+
+  .auth-box h2 {
+    font-size: 1.5rem;
+  }
+
+  .auth-box input,
+  .auth-box button {
+    padding: 10px;
+  }
+}
